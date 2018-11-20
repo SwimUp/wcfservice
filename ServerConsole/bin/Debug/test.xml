@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<return>
+  <AGREEMENT KADM="075" budgetId="1001000000040" budgetSumm="193006690.6" caption="Департамент образования города Москвы" dateFrom="2014-09-01 00:00:00" dateTo="2015-08-31 00:00:00" id="1001000002228">
+    <AGREEMENT_ORG agreementSumm="25823766.66" budgetReqsSumm="17290822.19" caption="ГБОУ детский сад № 1989" id="1001000001613" subsidySumm="25823766.66">
+      <SCHEDULE transferDate="2014-10-01 00:00:00" transferSumm="1658808.33"/>
+      <SCHEDULE transferDate="2014-11-01 00:00:00" transferSumm="2623758.37"/>
+      <SCHEDULE transferDate="2014-12-01 00:00:00" transferSumm="2591569.44"/>
+      <SCHEDULE transferDate="2015-01-25 00:00:00" transferSumm="1591569.44"/>
+      <SCHEDULE transferDate="2015-02-01 00:00:00" transferSumm="2091569.44"/>
+      <SCHEDULE transferDate="2015-03-01 00:00:00" transferSumm="2267947.22"/>
+      <SCHEDULE transferDate="2014-09-01 00:00:00" transferSumm="1658808.33"/>
+      <SCHEDULE transferDate="2015-04-01 00:00:00" transferSumm="2267947.22"/>
+      <SCHEDULE transferDate="2015-05-01 00:00:00" transferSumm="2267947.22"/>
+      <SCHEDULE transferDate="2015-06-01 00:00:00" transferSumm="2267947.22"/>
+      <SCHEDULE transferDate="2015-07-01 00:00:00" transferSumm="2267947.22"/>
+      <SCHEDULE transferDate="2015-08-01 00:00:00" transferSumm="2267947.21"/>
+    </AGREEMENT_ORG>
+  </AGREEMENT>
+  
+  <AGREEMENT KADM="941" budgetId="1001000000060" budgetSumm="3344646.3" caption="Префектура Северо-Восточного административного округа города Москвы" dateFrom="2015-01-01 00:00:00" dateTo="2015-12-31 00:00:00" id="1001000007956">
+    <AGREEMENT_ORG agreementSumm="158870417.65" budgetReqsSumm="158870417.65" caption="ГБУ &quot;Жилищник Бабушкинского района&quot;" id="1001000014383" subsidySumm="158870417.65">
+      <SCHEDULE transferDate="2015-12-04 00:00:00" transferSumm="13239201.48"/>
+      <SCHEDULE transferDate="2015-11-06 00:00:00" transferSumm="13239201.47"/>
+      <SCHEDULE transferDate="2015-10-06 00:00:00" transferSumm="13239201.47"/>
+      <SCHEDULE transferDate="2015-09-07 00:00:00" transferSumm="13239201.47"/>
+      <SCHEDULE transferDate="2015-08-05 00:00:00" transferSumm="13239201.47"/>
+      <SCHEDULE transferDate="2015-07-06 00:00:00" transferSumm="13239201.47"/>
+      <SCHEDULE transferDate="2015-06-08 00:00:00" transferSumm="13239201.47"/>
+      <SCHEDULE transferDate="2015-05-08 00:00:00" transferSumm="13239201.47"/>
+      <SCHEDULE transferDate="2015-04-06 00:00:00" transferSumm="13239201.47"/>
+      <SCHEDULE transferDate="2015-03-06 00:00:00" transferSumm="13239201.47"/>
+      <SCHEDULE transferDate="2015-02-10 00:00:00" transferSumm="26478402.94"/>
+      <BO Bo_number="22321" amount="88674319.39" grbs="941" kcsr="05Д0181" kesr="241" kfsr="0503" kvr="611" period="2015"/>
+      <BO Bo_number="22314" amount="12409299.8" grbs="941" kcsr="05Д0481" kesr="241" kfsr="0501" kvr="611" period="2015"/>
+      <BO Bo_number="22318" amount="20162885.29" grbs="941" kcsr="01Д0581" kesr="241" kfsr="0503" kvr="611" period="2015"/>
+      <BO Bo_number="22327" amount="19000000" grbs="941" kcsr="03А0281" kesr="241" kfsr="0702" kvr="611" period="2015"/>
+      <BO Bo_number="22323" amount="16790487.72" grbs="941" kcsr="13Б0381" kesr="241" kfsr="0503" kvr="611" period="2015"/>
+      <BO Bo_number="22304" amount="1833425.45" grbs="941" kcsr="05Г0681" kesr="241" kfsr="0501" kvr="611" period="2015"/>
+    </AGREEMENT_ORG>
+  </AGREEMENT>
+</return>
