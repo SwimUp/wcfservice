@@ -1,0 +1,7 @@
+D:\Работа\WCFservice\WCFservice\bin\WCFservice.dll.config
+D:\Работа\WCFservice\WCFservice\bin\WCFservice.dll
+D:\Работа\WCFservice\WCFservice\bin\WCFservice.pdb
+D:\Работа\WCFservice\WCFservice\obj\Debug\WCFservice.csproj.CoreCompileInputs.cache
+D:\Работа\WCFservice\WCFservice\obj\Debug\WCFservice.dll
+D:\Работа\WCFservice\WCFservice\obj\Debug\WCFservice.pdb
+D:\Работа\WCFservice\WCFservice\obj\Debug\WCFservice.csprojAssemblyReference.cache
