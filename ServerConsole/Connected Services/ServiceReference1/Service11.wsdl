@@ -23,7 +23,7 @@
     <wsdl:part name="parameters" element="tns:FileTransferRequest" />
   </wsdl:message>
   <wsdl:message name="FileTransferRequest_Headers">
-    <wsdl:part name="FileName" element="tns:FileName" />
+    <wsdl:part name="fileName" element="tns:fileName" />
   </wsdl:message>
   <wsdl:portType name="IService">
     <wsdl:operation name="DownloadFile">

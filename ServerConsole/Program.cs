@@ -39,8 +39,8 @@ namespace ServerConsole
                 WCFserviceUtility.DownloadFile("AGREEMENT.xml");
             ============================================================= */
 
-            /* Десериализация, загрузка в БД
-            AGREEMENTMain main = (AGREEMENTMain)XMLUtility.DeserializeData("AGREEMENT.xml", typeof(AGREEMENTMain));
+            /* Десериализация, загрузка в БД*/
+            AgreementMain main = (AgreementMain)XMLUtility.DeserializeData("AGREEMENT.xml", typeof(AgreementMain));
 
             DatabaseUtility.CreateDBConnection("localhost", "agreement", "root", "admin");
             DatabaseUtility.Connection.Open();
@@ -48,7 +48,6 @@ namespace ServerConsole
             DatabaseUtility.InsertAGREEMENTData(main);
 
             DatabaseUtility.CloseConnection();
-            */
 
 
             /*

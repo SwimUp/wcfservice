@@ -27,7 +27,7 @@ namespace ServerConsole
 
             return true;
         }
-        public static bool InsertAGREEMENTData(AGREEMENTMain main)
+        public static bool InsertAGREEMENTData(AgreementMain main)
         {
             if (Connection == null)
                 return false;
@@ -47,12 +47,12 @@ namespace ServerConsole
             int allAGreeOrg = 0;
             int allSchedule = 0;
             int allBO = 0;
-            for (int i = 0; i < main.AGREEMENTs.Length; i++)
+            for (int i = 0; i < main.agreements.Length; i++)
             {
-                AGREEMENT agr = main.AGREEMENTs[i];
+                Agreement agr = main.agreements[i];
 
                 myCommand.Parameters.AddWithValue("@UNIQUE_ID", i);
-                myCommand.Parameters.AddWithValue("@KADM", agr.KADM);
+                myCommand.Parameters.AddWithValue("@KADM", agr.kadm);
                 myCommand.Parameters.AddWithValue("@budgetId", agr.budgetId);
                 myCommand.Parameters.AddWithValue("@budgetSumm", agr.budgetSumm);
                 myCommand.Parameters.AddWithValue("@caption", agr.caption);
@@ -63,9 +63,9 @@ namespace ServerConsole
                 myCommand.ExecuteNonQuery();
                 myCommand.Parameters.Clear();
 
-                for (int i2 = 0; i2 < agr.AGREEMENT_ORGs.Length; i2++)
+                for (int i2 = 0; i2 < agr.agreementOrgs.Length; i2++)
                 {
-                    AGREEMENT_ORG org = agr.AGREEMENT_ORGs[i2];
+                    AgreementOrg org = agr.agreementOrgs[i2];
 
                     myCommand2.Parameters.AddWithValue("@UNIQUE_ID", allAGreeOrg);
                     myCommand2.Parameters.AddWithValue("@agreementSumm", org.agreementSumm);
@@ -78,9 +78,9 @@ namespace ServerConsole
                     myCommand2.ExecuteNonQuery();
                     myCommand2.Parameters.Clear();
 
-                    for (int i3 = 0; i3 < org.SCHEDULEs.Length; i3++)
+                    for (int i3 = 0; i3 < org.Schedules.Length; i3++)
                     {
-                        SCHEDULE sch = org.SCHEDULEs[i3];
+                        Schedule sch = org.Schedules[i3];
 
                         myCommand3.Parameters.AddWithValue("@transferDate", sch.transferDate);
                         myCommand3.Parameters.AddWithValue("@transferSumm", sch.transferSumm);
@@ -94,14 +94,14 @@ namespace ServerConsole
 
                     }
 
-                    if (org.BOs != null)
+                    if (org.bos != null)
                     {
-                        for (int i4 = 0; i4 < org.BOs.Length; i4++)
+                        for (int i4 = 0; i4 < org.bos.Length; i4++)
                         {
-                            BO bo = org.BOs[i4];
+                            BO bo = org.bos[i4];
 
                             myCommand4.Parameters.AddWithValue("@UNIQUE_ID", allBO);
-                            myCommand4.Parameters.AddWithValue("@Bo_number", bo.Bo_number);
+                            myCommand4.Parameters.AddWithValue("@Bo_number", bo.boNumber);
                             myCommand4.Parameters.AddWithValue("@amount", bo.amount);
                             myCommand4.Parameters.AddWithValue("@grbs", bo.grbs);
                             myCommand4.Parameters.AddWithValue("@kcsr", bo.kcsr);

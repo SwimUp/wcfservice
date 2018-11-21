@@ -33,7 +33,7 @@ namespace WCFservice
 
         public void UploadFile(FileTransferRequest request)
         {
-            string FilePath = HttpContext.Current.Server.MapPath("~/Files/") + request.FileName;
+            string FilePath = HttpContext.Current.Server.MapPath("~/Files/") + request.fileName;
             
             using (FileStream fs = new FileStream(FilePath, FileMode.OpenOrCreate))
             {

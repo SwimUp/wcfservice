@@ -42,7 +42,7 @@ namespace ServerConsole.ServiceReference1 {
     public partial class FileTransferRequest {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="WCFservice")]
-        public string FileName;
+        public string fileName;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="WCFservice", Order=0)]
         public System.IO.Stream Data;
@@ -50,8 +50,8 @@ namespace ServerConsole.ServiceReference1 {
         public FileTransferRequest() {
         }
         
-        public FileTransferRequest(string FileName, System.IO.Stream Data) {
-            this.FileName = FileName;
+        public FileTransferRequest(string fileName, System.IO.Stream Data) {
+            this.fileName = fileName;
             this.Data = Data;
         }
     }
@@ -104,9 +104,9 @@ namespace ServerConsole.ServiceReference1 {
             base.Channel.UploadFile(request);
         }
         
-        public void UploadFile(string FileName, System.IO.Stream Data) {
+        public void UploadFile(string fileName, System.IO.Stream Data) {
             ServerConsole.ServiceReference1.FileTransferRequest inValue = new ServerConsole.ServiceReference1.FileTransferRequest();
-            inValue.FileName = FileName;
+            inValue.fileName = fileName;
             inValue.Data = Data;
             ((ServerConsole.ServiceReference1.IService)(this)).UploadFile(inValue);
         }
@@ -116,9 +116,9 @@ namespace ServerConsole.ServiceReference1 {
             return base.Channel.UploadFileAsync(request);
         }
         
-        public System.Threading.Tasks.Task UploadFileAsync(string FileName, System.IO.Stream Data) {
+        public System.Threading.Tasks.Task UploadFileAsync(string fileName, System.IO.Stream Data) {
             ServerConsole.ServiceReference1.FileTransferRequest inValue = new ServerConsole.ServiceReference1.FileTransferRequest();
-            inValue.FileName = FileName;
+            inValue.fileName = fileName;
             inValue.Data = Data;
             return ((ServerConsole.ServiceReference1.IService)(this)).UploadFileAsync(inValue);
         }

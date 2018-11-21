@@ -21,7 +21,7 @@ namespace WCFservice
     public class FileTransferRequest
     {
         [MessageHeader(MustUnderstand = true)]
-        public string FileName;
+        public string fileName;
 
         [MessageBodyMember(Order = 1)]
         public Stream Data;

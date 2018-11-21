@@ -4,18 +4,18 @@ using System.Xml.Serialization;
 namespace ServerConsole
 {
     [XmlRoot("return")]
-    public sealed class AGREEMENTMain
+    public sealed class AgreementMain
     {
         [XmlElement("AGREEMENT")]
-        public AGREEMENT[] AGREEMENTs { get; set; }
+        public Agreement[] agreements { get; set; }
     }
-    public sealed class AGREEMENT
+    public sealed class Agreement
     {
         [XmlElement("AGREEMENT_ORG")]
-        public AGREEMENT_ORG[] AGREEMENT_ORGs { get; set; }
+        public AgreementOrg[] agreementOrgs { get; set; }
 
         [XmlAttribute]
-        public string KADM { get; set; }
+        public string kadm { get; set; }
 
         [XmlAttribute]
         public ulong budgetId { get; set; }
@@ -39,7 +39,7 @@ namespace ServerConsole
         {
             StringBuilder builder = new StringBuilder();
 
-            builder.AppendLine(KADM.ToString());
+            builder.AppendLine(kadm.ToString());
             builder.AppendLine(budgetId.ToString());
             builder.AppendLine(budgetSumm.ToString());
             builder.AppendLine(caption);
@@ -50,13 +50,13 @@ namespace ServerConsole
             return builder.ToString();
         }
     }
-    public sealed class AGREEMENT_ORG
+    public sealed class AgreementOrg
     {
         [XmlElement("SCHEDULE")]
-        public SCHEDULE[] SCHEDULEs;
+        public Schedule[] Schedules;
 
         [XmlElement("BO")]
-        public BO[] BOs;
+        public BO[] bos;
 
         [XmlAttribute]
         public double agreementSumm { get; set; }
@@ -86,7 +86,7 @@ namespace ServerConsole
             return builder.ToString();
         }
     }
-    public sealed class SCHEDULE
+    public sealed class Schedule
     {
         [XmlAttribute]
         public string transferDate { get; set; }
@@ -107,7 +107,7 @@ namespace ServerConsole
     public sealed class BO
     {
         [XmlAttribute]
-        public string Bo_number { get; set; }
+        public string boNumber { get; set; }
 
         [XmlAttribute]
         public double amount { get; set; }
@@ -131,7 +131,7 @@ namespace ServerConsole
         {
             StringBuilder builder = new StringBuilder();
 
-            builder.AppendLine(Bo_number.ToString());
+            builder.AppendLine(boNumber.ToString());
             builder.AppendLine(amount.ToString());
             builder.AppendLine(grbs.ToString());
             builder.AppendLine(kcsr);

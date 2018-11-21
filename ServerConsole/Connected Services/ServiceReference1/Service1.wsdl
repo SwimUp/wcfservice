@@ -33,7 +33,7 @@
     <wsdl:operation name="UploadFile">
       <soap:operation soapAction="WCFservice/IService/UploadFile" style="document" />
       <wsdl:input name="FileTransferRequest">
-        <soap:header message="i0:FileTransferRequest_Headers" part="FileName" use="literal" />
+        <soap:header message="i0:FileTransferRequest_Headers" part="fileName" use="literal" />
         <soap:body use="literal" />
       </wsdl:input>
     </wsdl:operation>

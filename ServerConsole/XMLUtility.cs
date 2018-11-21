@@ -10,11 +10,11 @@ namespace ServerConsole
 {
     public static class XMLUtility
     {
-        public static object DeserializeData(string Path, System.Type DataType)
+        public static object DeserializeData(string path, System.Type dataType)
         {
-            XmlSerializer formatter = new XmlSerializer(DataType);
+            XmlSerializer formatter = new XmlSerializer(dataType);
 
-            using (FileStream fs = new FileStream(Path, FileMode.Open))
+            using (FileStream fs = new FileStream(path, FileMode.Open))
             {
                 object data = formatter.Deserialize(fs);
 

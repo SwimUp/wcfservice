@@ -1,0 +1,12 @@
+D:\Работа\WCFservice\ServerConsole\bin\CustomBuild\ServerConsole.exe.config
+D:\Работа\WCFservice\ServerConsole\bin\CustomBuild\ServerConsole.exe
+D:\Работа\WCFservice\ServerConsole\bin\CustomBuild\Google.Protobuf.dll
+D:\Работа\WCFservice\ServerConsole\bin\CustomBuild\log4net.dll
+D:\Работа\WCFservice\ServerConsole\bin\CustomBuild\MySql.Data.dll
+D:\Работа\WCFservice\ServerConsole\bin\CustomBuild\Google.Protobuf.xml
+D:\Работа\WCFservice\ServerConsole\bin\CustomBuild\log4net.xml
+D:\Работа\WCFservice\ServerConsole\bin\CustomBuild\MySql.Data.xml
+D:\Работа\WCFservice\ServerConsole\obj\CustomBuild\ServerConsole.csprojAssemblyReference.cache
+D:\Работа\WCFservice\ServerConsole\obj\CustomBuild\ServerConsole.csproj.CoreCompileInputs.cache
+D:\Работа\WCFservice\ServerConsole\obj\CustomBuild\ServerConsole.csproj.CopyComplete
+D:\Работа\WCFservice\ServerConsole\obj\CustomBuild\ServerConsole.exe
